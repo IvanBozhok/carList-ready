@@ -1,0 +1,13 @@
+nav {
+  background-color: gray !important;
+  border-top: 1px solid rgba(160,160,160,0.2) !important;
+}
+li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+li:hover a {
+  color: black;
+}
+

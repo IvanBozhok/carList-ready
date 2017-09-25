@@ -1,0 +1,18 @@
+<div class="col s12 m12">
+  <div class="card">
+    <div class="card-image">
+      <img src="{{car.image}}">
+      <span class="card-title">{{car.brand}} {{car.model}}</span>
+    </div>
+    <div class="card-content">
+      <p>{{car.description}}</p>
+    </div>
+    <div class="card-action">
+      <ul class="collection with-header">
+        <li class="collection-header"><h4>модель двигателя</h4></li>
+        <li *ngFor="let dt of car.dt" class="collection-item"><div><span>{{dt}}</span><a *ngFor="let spares of car.spares" href="#!" class="secondary-content"><i class="material-icons">{{spares}}</i></a></div></li>
+        <li *ngFor="let i of car.i" class="collection-item"><div><span>{{i}}</span><a *ngFor="let spares of car.spares" href="#!" class="secondary-content"><i class="material-icons">{{spares}}</i></a></div></li>
+      </ul>
+    </div>
+  </div>
+</div>

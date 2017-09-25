@@ -1,0 +1,11 @@
+<div *ngFor="let car of cars"  class="col s12 m3">
+  <div class="card">
+    <div class="card-image">
+      <img src="{{car.image}}">
+      <span class="card-title">{{car.brand}} {{car.model}}</span>
+    </div>
+    <div class="card-action">
+      <a [routerLink]="['/car/',car._id]">Подробнее</a>
+    </div>
+  </div>
+</div>
